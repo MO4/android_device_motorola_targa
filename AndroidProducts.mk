@@ -13,3 +13,6 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_targa.mk
+ifeq ($(TARGET_PRODUCT),slim_targa)
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/slim.mk
+endif

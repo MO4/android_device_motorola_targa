@@ -1,13 +1,16 @@
+# Release name
+PRODUCT_RELEASE_NAME := targa
+
 # Inherit device configuration for Droid Bionic.
 $(call inherit-product, device/motorola/targa/full_targa.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common SLIM stuff.
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cm_targa
+PRODUCT_NAME := slim_targa
 PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := targa
 PRODUCT_DEVICE_PREFIX := cdma
